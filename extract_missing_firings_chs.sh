@@ -19,5 +19,5 @@ comm -23 chs_channels.txt firings.txt > missing_firings_chs.txt
 # Search for missing channel paths in chs.txt
 while read channel; do
     grep "$channel" chs.txt
-done < missing_channels.txt > missing_firings_chs_dirs.txt
+done < missing_firings_chs.txt > missing_firings_chs_dirs.txt
 
